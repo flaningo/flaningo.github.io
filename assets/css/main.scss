@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+$sans-serif-narrow: "PT Sans Narrow", sans-serif;
+$global-font-family: "PT Serif", serif;
+
+.initial-content .page__hero--overlay {
+    padding: 5em 0;
+}
+
+.greedy-nav ul.visible-links {
+    justify-content: flex-start;
+}
+
+.author__bio {
+    font-style: italic;
+}
+
+.author__urls.social-icons .fa-linkedin {
+    color: inherit;
+}
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

@@ -1,0 +1,47 @@
+title: Natalia Petrashova
+email: natalia@petrashov.ru
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my resume
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://flaningo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+encoding: utf-8
+
+author:
+  name: Natalia Petrashova
+  avatar: /assets/images/natalia_petrashova.jpeg
+  bio: "I am a biologist, specializing in molecular biology and based in Berlin, Germany."
+  email: natalia@petrashov.ru
+  linkedin: npetrashova
+
+#theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "air"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - Makefile
+  - Dockerfile
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+atom_feed:
+  hide: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
